@@ -18,7 +18,7 @@ export default function HeroSection() {
               innovative solutions and advanced technology to help you grow your
               business. Our mission is to help you succeed in the digital age by
               providing you with the tools and resources you need to thrive in
-              today's competitive marketplace.
+              today&apos;s competitive marketplace.
             </p>
           </div>
 
