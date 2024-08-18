@@ -3,5 +3,5 @@ export default function MaxWidthWrapper({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="max-w-[90%] mx-auto w-full ">{children}</div>;
+  return <div className="mx-auto w-full ">{children}</div>;
 }

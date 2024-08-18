@@ -1,14 +1,10 @@
 import Footer from "@/components/globals/footer";
 import { VelocityScroll } from "@/components/molecules/velocity-words";
 import AboutSection from "@/components/sections/about-section";
-import EducationSection from "@/components/sections/education-section";
-import ExperienceSection from "@/components/sections/experience-section";
-import GithubContributions from "@/components/sections/github-section";
+import ContactUsSection from "@/components/sections/contact-section";
 import HeroSection from "@/components/sections/hero-section";
-import { Photos } from "@/components/sections/parallex-photos";
-import ProjectSection from "@/components/sections/projects-section";
-import SkillSection from "@/components/sections/skills-section";
-import Socials from "@/components/sections/socials";
+import OurFocusAreas from "@/components/sections/our-focus-areas";
+import ServicesSection from "@/components/sections/projects-section";
 import MaxWidthWrapper from "@/components/wrappers/max-width-wrapper";
 
 export default function Home() {
@@ -18,23 +14,26 @@ export default function Home() {
         <HeroSection />
 
         <AboutSection />
-        <ExperienceSection />
+
+        <ServicesSection />
+
+        {/* <ExperienceSection /> */}
 
         <div className="py-10 border-b">
           <VelocityScroll
-            text="i center divs"
+            text="DITSA: Your Gateway for Digital Transformation"
             default_velocity={2}
             className="hero-typography py-2"
           />
         </div>
+        <OurFocusAreas />
+        <ContactUsSection />
 
-        <EducationSection />
+        {/* <EducationSection />
         <SkillSection />
-        <ProjectSection />
         <Photos />
-        <Socials />
+        <Socials /> */}
       </MaxWidthWrapper>
-      <Footer />
     </main>
   );
 }

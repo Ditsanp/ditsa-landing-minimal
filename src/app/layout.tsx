@@ -4,41 +4,39 @@ import localFont from "next/font/local";
 import ColorModeProvider from "@/provider/ThemeProvider";
 import Navbar from "@/components/globals/navbar";
 import LenisWrapper from "@/components/wrappers/lenis-wrapper";
-
-const averta = localFont({
-  src: "../fonts/averta/id-averta-2.woff",
+import { Bebas_Neue, Nunito_Sans } from "next/font/google";
+import Footer from "@/components/globals/footer";
+import { Toaster } from "sonner";
+const averta = Bebas_Neue({
+  weight: ["400"],
   variable: "--font-averta",
+  subsets: ["latin"],
 });
 
-const avertaSemibold = localFont({
-  src: "../fonts/averta/id-averta-1.woff",
-  variable: "--font-averta-semibold",
-});
-
-const avertaBold = localFont({
-  src: "../fonts/averta/id-averta-3.woff",
-  variable: "--font-averta-bold",
+const nunu = Nunito_Sans({
+  weight: ["400", "200", "300", "600", "700", "800", "900"],
+  variable: "--font-nunito",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Sulav Baral",
-  description: "Sulav Baral's personal website",
+  title: "DITSANP",
+  description:
+    " DITSA: Your Gateway for Digital Transformation with Innovative Solutions and Advanced Technology",
   keywords: [
-    "Sulav Baral",
-    "Sulav",
-    "Baral",
-    "Sulav Baral's personal website",
-    "Fullstack Developer",
-    "Software Engineer",
-    "React Developer",
-    "React",
-    "ReactJS",
-    "React Native",
-    "React Native Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "NodeJS Developer",
-    "NodeJS",
+    "DITSA",
+    "Digital Transformation",
+    "Innovative Solutions",
+    "Advanced Technology",
+    "Digital Marketing",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Data Science",
+    "Web Development",
+    "Mobile Development",
+    "Software Development",
+    "Digital Transformation Agency",
+    "Digital Transformation Company",
   ],
 };
 
@@ -49,21 +47,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={
-          averta.variable +
-          " " +
-          avertaSemibold.variable +
-          " " +
-          avertaBold.variable
-        }
-      >
+      <body className={averta.variable + " " + nunu.variable}>
         <LenisWrapper>
           <ColorModeProvider>
             <Navbar />
             {children}
+            <Footer />
           </ColorModeProvider>
         </LenisWrapper>
+        <Toaster richColors />
       </body>
     </html>
   );

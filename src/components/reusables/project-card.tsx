@@ -57,20 +57,14 @@ export default function ProjectCard({
         <div>
           <div className="grid lg:grid-cols-2 gap-10">
             <div className={className}>
-              <h3 className="sub-section-title-typography">{name}</h3>
+              <h3 className="sub-section-title-typography font-semibold">
+                {name}
+              </h3>
               <p className="section-p-typography">{description}</p>
               <div className="mt-5 gap-2 flex flex-wrap items-center">
                 {techs.map((tech, idx) => (
                   <WordBadge key={idx} word={tech} variant="light" />
                 ))}
-              </div>
-              <div className="flex items-start mt-5 gap-3">
-                <Button className="text-lg p-3 rounded-full ">
-                  <SiGithub size={18} />
-                </Button>
-                <Button className="text-lg p-3 rounded-full bg-accent-purple">
-                  <SiGooglechrome size={18} />
-                </Button>
               </div>
             </div>
             <div
@@ -88,7 +82,7 @@ export default function ProjectCard({
                   >
                     <Image
                       src={src}
-                      placeholder="blur"
+                      // placeholder="blur"
                       alt="image"
                       //   fill
                       className={

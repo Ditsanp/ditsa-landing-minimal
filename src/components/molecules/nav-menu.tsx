@@ -11,16 +11,16 @@ const navItems = [
     href: "/",
   },
   {
-    title: "Work",
-    href: "/work",
-  },
-  {
     title: "About",
     href: "/about",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Ditsa-AI",
+    href: "/ditsa-ai",
+  },
+  {
+    title: "Team",
+    href: "/team",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function NavMenu({
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-screen w-screen xl:w-[40%] bg-primary dark:bg-background fixed top-0 right-0 text-white"
+      className="h-screen w-screen xl:w-[40%] bg-ditsa-darkcyan dark:bg-background fixed top-0 right-0 text-white"
     >
       <div className="flex flex-col justify-between h-full px-10 pb-10 md:pb-20 md:px-20 ">
         <div
@@ -57,7 +57,7 @@ export default function NavMenu({
               }}
               className="p-0 rounded-full"
             >
-              <X className="w-10 h-10 rounded-full bg-red-600 p-2 dark:text-white" />
+              <X className="w-10 h-10 rounded-full bg-ditsa-darkcyan p-2 dark:text-white" />
             </Button>
           </div>
           {navItems.map((data, index) => {
