@@ -3,6 +3,44 @@ import MaxWidthWrapper from "../wrappers/max-width-wrapper";
 import ThemeSwitcher from "../atoms/theme-switcher";
 import BurgerMenu from "../molecules/burger-menu";
 import Link from "next/link";
+
+const navItems = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "Company",
+    href: "/",
+    children: [
+      {
+        title: "Team",
+        href: "/",
+      },
+      {
+        title: "About Us",
+        href: "/",
+      },
+      {
+        title: "Work with us",
+        href: "/",
+      },
+    ],
+  },
+  {
+    title: "Services",
+    href: "#services",
+  },
+  {
+    title: "Ditsa-AI",
+    href: "/ditsa-ai",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
+  },
+];
+
 export default function Navbar() {
   return (
     <>
@@ -16,6 +54,13 @@ export default function Navbar() {
             </Link>
 
             <ul className="flex space-x-4 text-2xl items-center">
+              <li className="flex items-center text-lg gap-10">
+                {navItems.map((item, index) => (
+                  <Link key={index} href={item.href}>
+                    <p>{item.title}</p>
+                  </Link>
+                ))}
+              </li>
               <li>
                 <ThemeSwitcher />
               </li>
