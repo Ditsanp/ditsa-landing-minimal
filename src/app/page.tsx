@@ -1,4 +1,5 @@
 import Footer from "@/components/globals/footer";
+import ClientMarquee from "@/components/molecules/our-clients";
 import { VelocityScroll } from "@/components/molecules/velocity-words";
 import AboutSection from "@/components/sections/about-section";
 import ContactUsSection from "@/components/sections/contact-section";
@@ -12,7 +13,7 @@ export default function Home() {
     <main className="min-h-screen ">
       <MaxWidthWrapper>
         <HeroSection />
-
+        <ClientMarquee />
         <AboutSection />
 
         <ServicesSection />

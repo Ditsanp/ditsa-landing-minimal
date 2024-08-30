@@ -3,9 +3,13 @@
 // import SectionHeader from "../reusables/section-header";
 // import SectionSubHeader from "../reusables/section-sub-header";
 // import SectionWrapper from "../wrappers/section-wrapper";
-// import Image1 from "@/../public/images/image1.png";
-// import Image2 from "@/../public/images/image2.png";
-// import Smatch from "@/../public/images/smatch.jpeg";
+import Web1 from "@/../public/images/services/web/web.png";
+import Web2 from "@/../public/images/services/web/web1.png";
+import Web3 from "@/../public/images/services/web/web3.png";
+
+import App1 from "@/../public/images/services/app/app1.png";
+import App2 from "@/../public/images/services/app/app2.jpg";
+import App3 from "@/../public/images/services/app/app3.png";
 // import Smatch2 from "@/../public/images/smatch2.jpeg";
 // import Smatch1 from "@/../public/images/smatch3.jpeg";
 // import BB1 from "@/../public/images/bb.png";
@@ -199,6 +203,22 @@ export default function ServicesSection() {
 
 const projects = [
   {
+    name: "Web Design and Development",
+    description:
+      "Our web development services focus on creating websites that are not only visually stunning but also highly functional. We offer custom website design tailored to reflect your brand identity, responsive design to ensure your website looks great and performs well on all devices, and e-commerce solutions for building secure and scalable online stores. Additionally, we develop websites on content management systems (CMS) like WordPress, Joomla, and Drupal, and provide regular updates and maintenance to keep your site secure and up-to-date. Our goal is to create user-friendly websites that deliver an exceptional user experience and drive business growth.",
+    techs: [
+      "web development",
+      "responsive design",
+      "e-commerce solutions",
+      "CMS",
+      "custom website design",
+      "website maintenance",
+      "cross-device compatibility",
+      "user-friendly websites",
+    ],
+    images: [Web1, Web2, Web3],
+  },
+  {
     name: "Digital Marketing",
     description:
       "Our digital marketing services are aimed at driving traffic, increasing engagement, and boosting conversions. We employ a multi-faceted approach to ensure your brand gains the visibility it deserves. Our strategies include search engine optimization (SEO) to improve your website's ranking on search engines, pay-per-click (PPC) advertising for immediate traffic and conversions, and social media marketing to build and engage your audience on platforms like Facebook, Instagram, Twitter, and LinkedIn. Additionally, we offer content marketing to create valuable content that attracts, engages, and converts your target audience, as well as email marketing to develop and manage campaigns that nurture leads and drive sales.",
@@ -212,6 +232,8 @@ const projects = [
       "online visibility",
       "audience engagement",
     ],
+    className: "order-last",
+
     images: [],
   },
   {
@@ -233,8 +255,7 @@ const projects = [
       "scalable solutions",
       "secure software",
     ],
-    images: [],
-    className: "order-last",
+    images: [App2, App1, App3],
   },
   {
     name: "Graphics and Motion Designing",
@@ -250,6 +271,8 @@ const projects = [
       "infographics",
       "visual storytelling",
     ],
+    className: "order-last",
+
     images: [],
   },
   {
@@ -265,23 +288,6 @@ const projects = [
       "data-driven decisions",
       "BI tools",
       "actionable insights",
-    ],
-    className: "order-last",
-    images: [],
-  },
-  {
-    name: "Web Design and Development",
-    description:
-      "Our web development services focus on creating websites that are not only visually stunning but also highly functional. We offer custom website design tailored to reflect your brand identity, responsive design to ensure your website looks great and performs well on all devices, and e-commerce solutions for building secure and scalable online stores. Additionally, we develop websites on content management systems (CMS) like WordPress, Joomla, and Drupal, and provide regular updates and maintenance to keep your site secure and up-to-date. Our goal is to create user-friendly websites that deliver an exceptional user experience and drive business growth.",
-    techs: [
-      "web development",
-      "responsive design",
-      "e-commerce solutions",
-      "CMS",
-      "custom website design",
-      "website maintenance",
-      "cross-device compatibility",
-      "user-friendly websites",
     ],
     images: [],
   },

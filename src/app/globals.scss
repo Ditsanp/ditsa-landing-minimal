@@ -120,6 +120,19 @@ h1 h2 h3 h4 h5 h6 {
   }
 }
 
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 30s linear infinite;
+}
+
 body {
   transition: background-color 0.4s, color 0.4s, border 0.4s;
   // overflow: hidden;

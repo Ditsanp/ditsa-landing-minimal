@@ -1,32 +1,74 @@
 import SectionHeader from "@/components/reusables/section-header";
 import SectionWrapper from "@/components/wrappers/section-wrapper";
+import { SiInstagram, SiLinkedin } from "@icons-pack/react-simple-icons";
+import { LinkedinIcon } from "lucide-react";
 
 const people = [
   {
     name: "Manish Pyakurel",
-    role: "-",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    role: "Project Manager",
+    imageUrl: "/images/members/manish.JPG",
+    instagram: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.instagram.com/bishesh._p/",
   },
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Sabin Giri",
+    role: "Digital Marketing Manager",
+    imageUrl: "/images/members/bishesh.jpg",
+    instagram: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.instagram.com/bishesh._p/",
   },
   {
-    name: "Sulav Baral",
-    role: "-",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Sandesh Pyakurel",
+    role: "Backend Developer",
+    imageUrl: "/images/members/sandesh.JPG",
+    instagram: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.instagram.com/bishesh._p/",
   },
 
+  {
+    name: "Sulav Baral",
+    role: "Frontend Developer",
+    imageUrl: "/images/members/manish.JPG",
+    instagram: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.instagram.com/bishesh._p/",
+  },
+  {
+    name: "Sarjyant Shrestha",
+    role: "Graphics Designer ,UI/UX",
+    imageUrl: "/images/members/sarjyant.JPG",
+    instagram: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.instagram.com/bishesh._p/",
+  },
+  {
+    name: "Rodit Nepal",
+    role: "Business Development Manager",
+    imageUrl: "/images/members/rodit.JPG",
+    instagram: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.instagram.com/bishesh._p/",
+  },
+
+  {
+    name: "Bishesh Pokhrel",
+    role: "Social Media Manager / SEO Head",
+    imageUrl: "/images/members/bishesh.jpg",
+    instagram: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.instagram.com/bishesh._p/",
+  },
+  {
+    name: "Subashish Shrestha",
+    role: "Content Writer",
+    imageUrl: "/images/members/subhashish.jpg",
+    instagram: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.instagram.com/bishesh._p/",
+  },
+  {
+    name: "Amrit GC",
+    role: "Video Content Creator",
+    imageUrl: "/images/members/manish.JPG",
+    instagram: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.instagram.com/bishesh._p/",
+  },
   // More people...
 ];
 
@@ -65,6 +107,18 @@ export default function Page() {
                   <p className="text-sm font-semibold leading-6 text-indigo-600">
                     {person.role}
                   </p>
+                  <div className="flex items-center gap-3 mt-2">
+                    {person.linkedin && (
+                      <>
+                        <SiLinkedin className="h-4 w-4" />
+                      </>
+                    )}
+                    {person.instagram && (
+                      <>
+                        <SiInstagram className="h-4 w-4" />
+                      </>
+                    )}
+                  </div>
                 </div>
               </div>
             </li>
