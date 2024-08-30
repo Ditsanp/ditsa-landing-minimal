@@ -40,7 +40,11 @@ export default function ClientMarquee() {
               <img
                 src={client.src}
                 alt={client.alt}
-                className="h-40 md:h-52 w-auto object-contain"
+                className={
+                  client.alt === "True Himalayan Foods"
+                    ? "h-32 md:h-32 w-auto object-contain"
+                    : "h-40 md:h-52 w-auto object-contain"
+                }
               />
             </li>
           ))}
