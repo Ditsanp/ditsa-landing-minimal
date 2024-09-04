@@ -64,7 +64,7 @@ export default function Navbar() {
                 {navItems.map((item, index) => {
                   if (item.title === "Company") {
                     return (
-                      <HoverCard>
+                      <HoverCard key={index}>
                         <HoverCardTrigger asChild>
                           <div className="flex gap-2 items-center cursor-pointer">
                             <p>Company</p> <ChevronDown className="h-4 w-4" />
@@ -83,11 +83,9 @@ export default function Navbar() {
                     );
                   }
                   return (
-                    <>
-                      <Link key={index} href={item.href}>
-                        <p>{item.title}</p>
-                      </Link>
-                    </>
+                    <Link key={index} href={item.href}>
+                      <p>{item.title}</p>
+                    </Link>
                   );
                 })}
               </li>

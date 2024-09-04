@@ -83,9 +83,9 @@ export default function ContactPage() {
                 </div>
                 <blockquote className="mt-4">
                   <p className="text-lg text-muted-foreground">
-                    "Ditsa Technology transformed our online presence. Their
-                    team is professional, creative, and delivers outstanding
-                    results."
+                    &quot;Ditsa Technology transformed our online presence.
+                    Their team is professional, creative, and delivers
+                    outstanding results.&quot;
                   </p>
                 </blockquote>
                 <div className="mt-4 flex items-center">

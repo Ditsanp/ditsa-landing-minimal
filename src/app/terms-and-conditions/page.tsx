@@ -146,11 +146,11 @@ export default function Component() {
             </li>
             <li>
               <strong>Disclaimer:</strong> Except as expressly stated in these
-              Terms, all services are provided "as is" without any warranties,
-              express or implied. Ditsa Technology Pvt. Ltd. disclaims all other
-              warranties, including but not limited to, implied warranties of
-              merchantability, fitness for a particular purpose, and
-              non-infringement.
+              Terms, all services are provided &quot;as is&quot; without any
+              warranties, express or implied. Ditsa Technology Pvt. Ltd.
+              disclaims all other warranties, including but not limited to,
+              implied warranties of merchantability, fitness for a particular
+              purpose, and non-infringement.
             </li>
           </ul>
         </section>
@@ -176,8 +176,8 @@ export default function Component() {
             The Client agrees to indemnify and hold harmless Ditsa Technology
             Pvt. Ltd. and its employees, affiliates, and agents from any claims,
             damages, losses, liabilities, and expenses (including reasonable
-            attorneys' fees) arising out of or in connection with the Client's
-            use of the services.
+            attorneys&apos; fees) arising out of or in connection with the
+            Client&apos;s use of the services.
           </p>
         </section>
 
