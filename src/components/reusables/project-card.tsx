@@ -18,6 +18,10 @@ export default function ProjectCard({
   image?: any[];
   className?: string;
 }) {
+  if (!image) {
+    return;
+  }
+
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
