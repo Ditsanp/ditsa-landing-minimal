@@ -28,7 +28,7 @@ export default function ThemeSwitcher() {
       <Button
         onClick={() => toggleTheme()}
         variant={"ghost"}
-        className="rounded-full p-2 "
+        className="rounded-full md:bg-ditsa-cyan md:text-white p-2 "
         name="Toggle Theme"
         title="Toggle Theme"
         aria-label="Toggle Theme"

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Input } from "../ui/input";
 import { toast } from "sonner";
 import SectionHeader from "../reusables/section-header";
+import SectionWrapper from "../wrappers/section-wrapper";
 
 export default function ContactUsSection() {
   const [data, setData] = useState({
@@ -51,31 +52,17 @@ export default function ContactUsSection() {
   };
 
   return (
-    <section className="relative" id="contact">
-      <div className="area h-full">
-        <ul className="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+    <SectionWrapper>
       {/* Container */}
-      <div className="px-5 md:px-10 max-w-[90%] py-20 mx-auto text-white">
+      <div className="py-20 mx-auto text-black dark:text-white">
         {/* Component */}
         <div className="grid items-start gap-8 sm:gap-20 lg:grid-cols-2">
           <div className="max-w-3xl">
             {/* Title */}
-            <h2 className="mb-2 text-3xl font-bold md:text-5xl bebas-font">
+            <h2 className="mb-2 text-3xl md:text-5xl bebas-font">
               Let&apos;s build something exciting together!
             </h2>
-            <p className="my-4 max-w-lg pb-4 text-sm text-gray-200 sm:text-base md:mb-6 lg:mb-8">
+            <p className="my-4 max-w-lg pb-4 text-sm text-gray-700 dark:text-gray-300 sm:text-base md:mb-6 lg:mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus
             </p>
@@ -147,7 +134,7 @@ export default function ContactUsSection() {
                 ></path>
               </svg>
             </div>
-            <p className="mb-8 max-w-lg text-sm text-gray-200 sm:text-base">
+            <p className="mb-8 max-w-lg text-sm text-gray-700 dark:text-gray-300 sm:text-base">
               Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet
               luctus venenatis elit ut aliquam, purus sit amet luctus venenatis
             </p>
@@ -159,15 +146,17 @@ export default function ContactUsSection() {
               />
               <div className="flex flex-col">
                 <h6 className="text-base font-bold">Laila Bahar</h6>
-                <p className="text-sm text-gray-200">Designer</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Designer
+                </p>
               </div>
             </div>
           </div>
-          <div className="mx-auto bg-white border rounded-3xl px-12 py-8 text-center">
-            <h3 className="text-2xl text-black font-bold md:text-3xl">
+          <div className="mx-auto bg-white dark:bg-transparent border rounded-3xl px-12 py-8 text-center">
+            <h3 className="text-2xl text-black dark:text-white font-bold md:text-3xl">
               Get a free quote
             </h3>
-            <p className="mx-auto mb-6 mt-4 max-w-lg text-sm text-gray-800 lg:mb-8">
+            <p className="mx-auto mb-6 mt-4 max-w-lg text-sm text-gray-800 dark:text-gray-300 lg:mb-8">
               Lorem ipsum dolor sit amet consectetur adipiscing elit ut
               aliquam,purus sit amet luctus magna fringilla urna
             </p>
@@ -181,7 +170,7 @@ export default function ContactUsSection() {
               <div>
                 <label
                   htmlFor="name-2"
-                  className="mb-1  text-black font-medium"
+                  className="mb-1  text-black dark:text-white font-medium"
                 >
                   Your Name
                 </label>
@@ -196,7 +185,7 @@ export default function ContactUsSection() {
               <div className="mb-2">
                 <label
                   htmlFor="name-2"
-                  className="mb-1  text-black font-medium"
+                  className="mb-1  text-black dark:text-white font-medium"
                 >
                   Email Address
                 </label>
@@ -211,7 +200,7 @@ export default function ContactUsSection() {
               <div className="mb-5 md:mb-6 lg:mb-8">
                 <label
                   htmlFor="field-3"
-                  className="mb-1  text-black font-medium"
+                  className="mb-1  text-black dark:text-white font-medium"
                 >
                   Project Brief
                 </label>
@@ -219,7 +208,7 @@ export default function ContactUsSection() {
                   placeholder=""
                   maxLength={5000}
                   name="text"
-                  className="mb-2.5 mt-3 block h-auto min-h-32 w-full border rounded-md p-3 text-sm text-black"
+                  className="mb-2.5 mt-3 block h-auto min-h-32 w-full border rounded-md p-3 text-sm text-black dark:text-white"
                   value={data.text}
                   onChange={handleChange}
                 ></textarea>
@@ -230,7 +219,7 @@ export default function ContactUsSection() {
               >
                 {loading && (
                   <svg
-                    className="mr-3 h-5 w-5 animate-spin text-black"
+                    className="mr-3 h-5 w-5 animate-spin  text-white"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -256,6 +245,6 @@ export default function ContactUsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }

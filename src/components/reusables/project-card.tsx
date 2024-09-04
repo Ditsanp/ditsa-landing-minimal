@@ -1,21 +1,15 @@
 "use client";
-
 import Image from "next/image";
 import WordBadge from "../atoms/word-badge";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image1 from "@/../public/images/image1.png";
-import Image2 from "@/../public/images/image2.png";
 import style from "../molecules/menu.module.scss";
-import { Button } from "../ui/button";
-import { GithubIcon } from "lucide-react";
-import { SiGithub, SiGooglechrome } from "@icons-pack/react-simple-icons";
 
 export default function ProjectCard({
   name = "Project Name",
   description = "Project Description",
   techs = ["react", "typescript", "redux", "material-ui", "flutter"],
-  image = [Image1, Image2, Image1],
+  image,
   className,
 }: {
   name?: string;

@@ -25,7 +25,21 @@ export default function Footer() {
 
 function Content() {
   return (
-    <div className="bg-ditsa-darkcyan dark:bg-transparent py-8 w-full flex flex-col  justify-center overflow-hidden h-full">
+    <div className="relative dark:bg-transparent py-8 w-full flex flex-col  justify-center overflow-hidden h-full">
+      <div className="area h-full">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <MaxWidthWrapper>
         <Section2 />
         <Section1 />
@@ -46,7 +60,7 @@ const Section2 = () => {
   return (
     <div className="flex justify-center mb-20">
       <h1 className="text-[14vw] averta-bold leading-[0.8] mt-10 text-white">
-        <span className="dark:text-gradient bebas-font">DITSANP</span>
+        <span className="dark:text-gradient bebas-font">DITSA</span>
         <span className="text-accent-red">.</span>
       </h1>
     </div>

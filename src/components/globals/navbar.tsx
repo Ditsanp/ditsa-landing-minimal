@@ -3,6 +3,12 @@ import MaxWidthWrapper from "../wrappers/max-width-wrapper";
 import ThemeSwitcher from "../atoms/theme-switcher";
 import BurgerMenu from "../molecules/burger-menu";
 import Link from "next/link";
+import { HoverCardTrigger, HoverCard } from "../ui/hover-card";
+import { Button } from "../ui/button";
+import { HoverCardContent } from "@radix-ui/react-hover-card";
+import { ChevronDown } from "lucide-react";
+
+//todo make the links disappear when the screen is small and add a hover menu
 
 const navItems = [
   {
@@ -15,15 +21,15 @@ const navItems = [
     children: [
       {
         title: "Team",
-        href: "/",
+        href: "/team",
       },
       {
         title: "About Us",
-        href: "/",
+        href: "/about",
       },
       {
         title: "Work with us",
-        href: "/",
+        href: "/work-with-us",
       },
     ],
   },
@@ -54,17 +60,41 @@ export default function Navbar() {
             </Link>
 
             <ul className="flex space-x-4 text-2xl items-center">
-              <li className="flex items-center text-lg gap-10">
-                {navItems.map((item, index) => (
-                  <Link key={index} href={item.href}>
-                    <p>{item.title}</p>
-                  </Link>
-                ))}
+              <li className="hidden md:flex items-center text-lg gap-10 mr-10">
+                {navItems.map((item, index) => {
+                  if (item.title === "Company") {
+                    return (
+                      <HoverCard>
+                        <HoverCardTrigger asChild>
+                          <div className="flex gap-2 items-center cursor-pointer">
+                            <p>Company</p> <ChevronDown className="h-4 w-4" />
+                          </div>
+                        </HoverCardTrigger>
+                        <HoverCardContent className="w-52 border py-5 bg-gray-50 text-black rounded-2xl px-10">
+                          <div className="flex flex-col space-y-2">
+                            {item.children?.map((subItem, idx: number) => (
+                              <Link href={subItem.href} key={idx}>
+                                {subItem.title}
+                              </Link>
+                            ))}
+                          </div>
+                        </HoverCardContent>
+                      </HoverCard>
+                    );
+                  }
+                  return (
+                    <>
+                      <Link key={index} href={item.href}>
+                        <p>{item.title}</p>
+                      </Link>
+                    </>
+                  );
+                })}
               </li>
               <li>
                 <ThemeSwitcher />
               </li>
-              <li>
+              <li className="md:hidden">
                 <BurgerMenu />
               </li>
             </ul>
