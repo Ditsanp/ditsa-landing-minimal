@@ -62,8 +62,8 @@ export default function ProjectCard({
               </div>
             </div>
             <div
-              className="flex justify-center relative w-full overflow-hidden h-[60vh] 
-            bg-gradient-to-b from-accent-blue to-accent-purple dark:bg-none dark:text-white
+              className="flex justify-center relative w-full overflow-hidden h-[45vh] md:h-[60vh] 
+            bg-gradient-to-b from-ditsa-cyan to-accent-green  dark:text-white
             rounded-2xl"
             >
               {images.map(({ src, y }, i) => {

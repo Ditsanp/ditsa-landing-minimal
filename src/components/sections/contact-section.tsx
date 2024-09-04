@@ -54,7 +54,7 @@ export default function ContactUsSection() {
   return (
     <SectionWrapper>
       {/* Container */}
-      <div className="py-20 mx-auto text-black dark:text-white">
+      <div className="md:py-20 mx-auto text-black dark:text-white">
         {/* Component */}
         <div className="grid items-start gap-8 sm:gap-20 lg:grid-cols-2">
           <div className="max-w-3xl">
@@ -152,7 +152,7 @@ export default function ContactUsSection() {
               </div>
             </div>
           </div>
-          <div className="mx-auto bg-white dark:bg-transparent border rounded-3xl px-12 py-8 text-center">
+          <div className="mx-auto bg-white dark:bg-transparent md:border rounded-3xl md:px-12 md:py-8 text-center">
             <h3 className="text-2xl text-black dark:text-white font-bold md:text-3xl">
               Get a free quote
             </h3>

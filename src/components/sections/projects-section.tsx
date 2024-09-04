@@ -26,7 +26,7 @@ export default function ServicesSection() {
   return (
     <SectionWrapper>
       <SectionHeader title="Services we offer" />
-      <div className="grid gap-40 mt-10" id="services">
+      <div className="grid gap-20 md:gap-40 mt-10" id="services">
         {projects.map((project, idx) => (
           <ProjectCard
             key={idx}
@@ -75,7 +75,7 @@ const projects = [
     ],
     className: "order-last",
 
-    images: [DM1, DM2, DM3],
+    images: [DM2, DM1, DM3],
   },
   {
     name: "Apps and Software Development",
