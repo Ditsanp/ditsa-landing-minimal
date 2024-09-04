@@ -7,12 +7,12 @@ export default function Component() {
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
       <p className="mb-4">Effective Date: 2024/08/31</p>
       <p className="mb-6">
-        Ditsa Technology Pvt. Ltd. ("Company", "we", "our", "us") is committed
-        to protecting your privacy. This Privacy Policy explains how we collect,
-        use, disclose, and safeguard your information when you visit our website
-        www.ditsa.com.np or use our services. By using our website and services,
-        you agree to the collection and use of information in accordance with
-        this policy.
+        Ditsa Technology Pvt. Ltd. (&quot;Company&quot;, &quot;we&quot;,
+        &quot;our&quot;, &quot;us&quot;) is committed to protecting your
+        privacy. This Privacy Policy explains how we collect, use, disclose, and
+        safeguard your information when you visit our website www.ditsa.com.np
+        or use our services. By using our website and services, you agree to the
+        collection and use of information in accordance with this policy.
       </p>
       <div className="space-y-6">
         <section>

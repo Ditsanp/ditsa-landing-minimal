@@ -2,7 +2,7 @@ import SectionWrapper from "@/components/wrappers/section-wrapper";
 
 export default function Component() {
   return (
-    <SectionWrapper className="mx-auto py-8">
+    <SectionWrapper>
       <h1 className="text-3xl font-bold mb-6">Terms and Conditions</h1>
       <p className="mb-4">Effective Date: 2024/08/31</p>
       <p className="mb-6">

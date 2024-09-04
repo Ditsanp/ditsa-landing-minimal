@@ -16,8 +16,8 @@ export default function NotFound() {
           Page not found
         </h1>
         <p className="text-muted-foreground">
-          Oops! It seems you've wandered off the map. The page you're looking
-          for doesn't exist or has been moved.
+          Oops! It seems you&apos;ve wandered off the map. The page you&apos;re
+          looking for doesn&apos;t exist or has been moved.
         </p>
         <Button asChild size="lg" className="mt-8 bg-ditsa-cyan">
           <Link href="/">
