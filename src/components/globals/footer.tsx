@@ -52,6 +52,14 @@ const Section1 = () => {
   return (
     <div>
       <Nav />
+      <div className="mt-10">
+        <p className="text-center text-white">
+          Copyright &copy; 2024 DITSA. All Rights Reserved
+        </p>
+        <p className="text-center text-white mt-5">
+          Designed and Developed by Sulav Baral (tyzrex)
+        </p>
+      </div>
     </div>
   );
 };
