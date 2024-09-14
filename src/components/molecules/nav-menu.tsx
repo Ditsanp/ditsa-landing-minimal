@@ -67,6 +67,7 @@ export default function NavMenu({
                 data={{ ...data, index }}
                 isActive={selectedIndicator == data.href}
                 setSelectedIndicator={setSelectedIndicator}
+                handleClick={() => setIsActive(false)}
               ></Link>
             );
           })}

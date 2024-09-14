@@ -5,10 +5,12 @@ export default function Index({
   data,
   isActive,
   setSelectedIndicator,
+  handleClick,
 }: {
   data: { title: string; href: string; index: number };
   isActive: boolean;
   setSelectedIndicator: (href: string) => void;
+  handleClick: () => void;
 }) {
   const { title, href, index } = data;
 
@@ -23,6 +25,9 @@ export default function Index({
       initial="initial"
       animate="enter"
       exit="exit"
+      onClick={() => {
+        handleClick();
+      }}
     >
       <motion.div
         variants={scale}
