@@ -44,12 +44,12 @@ export const metadata: Metadata = {
       "DITSA: Your Gateway for Digital Transformation with Innovative Solutions and Advanced Technology",
     description:
       "DITSA: Your Gateway for Digital Transformation with Innovative Solutions and Advanced Technology",
-    url: "https://ditsanp.com/",
+    url: "https://ditsa.com.np/",
     siteName:
       "DITSA: Your Gateway for Digital Transformation with Innovative Solutions and Advanced Technology",
     images: [
       {
-        url: "/ditsaog.webp",
+        url: "https://ditsa.com.np/ditsaog.webp",
         width: 1200,
         height: 630,
       },
