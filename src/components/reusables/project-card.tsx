@@ -62,7 +62,7 @@ export default function ProjectCard({
               </div>
             </div>
             <div
-              className="flex justify-center relative w-full overflow-hidden h-[45vh] md:h-[60vh] 
+              className="hidden md:flex justify-center relative w-full overflow-hidden h-[45vh] md:h-[60vh] 
             bg-gradient-to-b from-ditsa-cyan to-accent-green  dark:text-white
             rounded-2xl"
             >
@@ -73,6 +73,7 @@ export default function ProjectCard({
                     key={`i_${i}`}
                     // className="h-full object-center object-contain w-full"
                     className={style.imageContainer}
+                    //show only one image in small screen
                   >
                     <Image
                       src={src}
@@ -88,6 +89,23 @@ export default function ProjectCard({
                   </motion.div>
                 );
               })}
+            </div>
+            <div
+              className="md:hidden justify-center relative w-full overflow-hidden h-[300px] 
+            bg-gradient-to-b from-ditsa-cyan to-accent-green  dark:text-white !px-5 border-none
+            rounded-2xl"
+            >
+              <Image
+                src={images[1].src}
+                // placeholder="blur"
+                alt="image"
+                //   fill
+                className={
+                  "object-contain w-full h-full rounded-lg gap-10 !m-0 " +
+                  "aspect-" +
+                  images[0].aspectRatio
+                }
+              />
             </div>
           </div>
         </div>
