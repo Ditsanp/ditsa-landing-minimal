@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Star, Loader2 } from "lucide-react";
 import SectionWrapper from "@/components/wrappers/section-wrapper";
+import SectionHeader from "@/components/reusables/section-header";
+import Image from "next/image";
 
 export default function ContactPage() {
   const [data, setData] = useState({
@@ -58,127 +60,123 @@ export default function ContactPage() {
 
   return (
     <SectionWrapper>
-      <div className="min-h-screen">
-        <div className="mx-auto py-16">
-          <div className="grid gap-10 lg:grid-cols-2">
-            <div className="flex flex-col justify-between">
+      {/* Container */}
+      <div className="md:py-20 mx-auto text-black dark:text-white">
+        {/* Component */}
+        <div className="grid items-start gap-8 sm:gap-20 lg:grid-cols-2">
+          <div className="max-w-3xl">
+            {/* Title */}
+            <h2 className="mb-2 text-3xl md:text-5xl bebas-font">
+              Let&apos;s build something exciting together!
+            </h2>
+            <p className="section-p-typography my-10">
+              We are here to help you with all your digital needs. Whether you
+              are looking to build a website, develop a mobile app, or create a
+              digital marketing strategy, we have the expertise and experience
+              to help you succeed.
+            </p>
+
+            <div className="flex rounded-3xl order-first md:order-last items-center w-full lg:justify-center">
+              <Image
+                src="/robot.png"
+                alt="Hero Image"
+                width={400}
+                height={400}
+                className="rounded-3xl"
+              />
+            </div>
+          </div>
+          <div className="mx-auto bg-white dark:bg-transparent md:border rounded-3xl md:px-12 md:py-8 text-center">
+            <SectionHeader
+              title="
+              Get a free quote"
+            />
+            <p className="section-p-typography mb-5">
+              Get in touch with us today to learn more about our services and
+              how we can help you achieve your goals.
+            </p>
+            {/* Form */}
+            <form
+              className="mx-auto mb-4 text-left space-y-4"
+              name="wf-form-password"
+              onSubmit={handleSubmit}
+              action={"POST"}
+            >
               <div>
-                <h1 className="text-4xl bebas-font text-primary sm:text-5xl md:text-6xl">
-                  Let&apos;s build something exciting together!
-                </h1>
-                <p className="mt-4 max-w-xl text-xl text-muted-foreground">
-                  We&apos;re excited to hear about your project. Fill out the
-                  form, and we&apos;ll get back to you as soon as possible.
-                </p>
-              </div>
-              <div className="mt-8">
-                <div className="flex items-center">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="h-6 w-6 text-yellow-400"
-                      fill="currentColor"
-                    />
-                  ))}
-                </div>
-                <blockquote className="mt-4">
-                  <p className="text-lg text-muted-foreground">
-                    &quot;Ditsa Technology transformed our online presence.
-                    Their team is professional, creative, and delivers
-                    outstanding results.&quot;
-                  </p>
-                </blockquote>
-                <div className="mt-4 flex items-center">
-                  <img
-                    className="h-12 w-12 rounded-full object-cover"
-                    src="/placeholder.svg?height=48&width=48"
-                    alt="Client"
-                  />
-                  <div className="ml-4">
-                    <p className="font-medium text-primary">Laila Bahar</p>
-                    <p className="text-sm text-muted-foreground">
-                      Designer at TechCorp
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-2xl bg-card p-8 shadow-lg">
-              <h2 className="text-2xl font-bold text-primary">
-                Get a free quote
-              </h2>
-              <p className="mt-2 text-muted-foreground">
-                Tell us about your project, and we&apos;ll provide you with a
-                custom quote.
-              </p>
-              <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-primary"
-                  >
-                    Your Name
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    className="mt-1"
-                    value={data.name}
-                    onChange={handleChange}
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-primary"
-                  >
-                    Email Address
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    className="mt-1"
-                    value={data.email}
-                    onChange={handleChange}
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-primary"
-                  >
-                    Project Brief
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    required
-                    className="mt-1"
-                    value={data.message}
-                    onChange={handleChange}
-                  />
-                </div>
-                <Button
-                  type="submit"
-                  className="w-full bg-ditsa-cyan"
-                  disabled={loading}
+                <label
+                  htmlFor="name-2"
+                  className="mb-1  text-black dark:text-white font-medium"
                 >
-                  {loading ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Sending...
-                    </>
-                  ) : (
-                    "Get a quote"
-                  )}
-                </Button>
-              </form>
-            </div>
+                  Your Name
+                </label>
+                <Input
+                  name="to"
+                  type="text"
+                  className="w-full mt-3"
+                  value={data.name}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="mb-2">
+                <label
+                  htmlFor="name-2"
+                  className="mb-1  text-black dark:text-white font-medium"
+                >
+                  Email Address
+                </label>
+                <Input
+                  name="subject"
+                  type="text"
+                  className="w-full mt-3"
+                  value={data.email}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="mb-5 md:mb-6 lg:mb-8">
+                <label
+                  htmlFor="field-3"
+                  className="mb-1  text-black dark:text-white font-medium"
+                >
+                  Project Brief
+                </label>
+                <textarea
+                  placeholder=""
+                  maxLength={5000}
+                  name="text"
+                  className="mb-2.5 mt-3 block h-auto min-h-32 w-full border rounded-md p-3 text-sm text-black dark:text-white"
+                  value={data.message}
+                  onChange={handleChange}
+                ></textarea>
+              </div>
+              <button
+                disabled={loading}
+                className="inline-flex items-center justify-center w-full cursor-pointer rounded-md bg-ditsa-cyan px-6 py-3 text-center font-semibold text-white"
+              >
+                {loading && (
+                  <svg
+                    className="mr-3 h-5 w-5 animate-spin  text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>
+                )}
+                {!loading && "Get a quote"}
+              </button>
+            </form>
           </div>
         </div>
       </div>

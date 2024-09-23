@@ -5,6 +5,7 @@ import { Input } from "../ui/input";
 import { toast } from "sonner";
 import SectionHeader from "../reusables/section-header";
 import SectionWrapper from "../wrappers/section-wrapper";
+import Image from "next/image";
 
 export default function ContactUsSection() {
   const [data, setData] = useState({
@@ -62,12 +63,22 @@ export default function ContactUsSection() {
             <h2 className="mb-2 text-3xl md:text-5xl bebas-font">
               Let&apos;s build something exciting together!
             </h2>
-            <p className="section-p-typography my-10">
+            <p className="section-p-typography mt-10">
               We are here to help you with all your digital needs. Whether you
               are looking to build a website, develop a mobile app, or create a
               digital marketing strategy, we have the expertise and experience
               to help you succeed.
             </p>
+
+            <div className="flex rounded-3xl order-first md:order-last items-center w-full lg:justify-center">
+              <Image
+                src="/robot.png"
+                alt="Hero Image"
+                width={400}
+                height={400}
+                className="rounded-3xl"
+              />
+            </div>
           </div>
           <div className="mx-auto bg-white dark:bg-transparent md:border rounded-3xl md:px-12 md:py-8 text-center">
             <SectionHeader
