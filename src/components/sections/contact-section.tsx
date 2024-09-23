@@ -62,103 +62,21 @@ export default function ContactUsSection() {
             <h2 className="mb-2 text-3xl md:text-5xl bebas-font">
               Let&apos;s build something exciting together!
             </h2>
-            <p className="my-4 max-w-lg pb-4 text-sm text-gray-700 dark:text-gray-300 sm:text-base md:mb-6 lg:mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus
+            <p className="section-p-typography my-10">
+              We are here to help you with all your digital needs. Whether you
+              are looking to build a website, develop a mobile app, or create a
+              digital marketing strategy, we have the expertise and experience
+              to help you succeed.
             </p>
-            {/* Testimonial */}
-            <div className="mb-4 flex items-center text-orange-500">
-              <svg
-                className="h-8 w-8"
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                ></path>
-              </svg>
-              <svg
-                className="h-8 w-8"
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                ></path>
-              </svg>
-              <svg
-                className="h-8 w-8"
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                ></path>
-              </svg>
-              <svg
-                className="h-8 w-8"
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                ></path>
-              </svg>
-              <svg
-                className="h-8 w-8"
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                ></path>
-              </svg>
-            </div>
-            <p className="mb-8 max-w-lg text-sm text-gray-700 dark:text-gray-300 sm:text-base">
-              Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet
-              luctus venenatis elit ut aliquam, purus sit amet luctus venenatis
-            </p>
-            <div className="flex">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/flowspark-1f3e0.appspot.com/o/Tailspark%20Images%2FPlaceholder%20Image.svg?alt=media&token=375a1ea3-a8b6-4d63-b975-aac8d0174074"
-                alt=""
-                className="mr-4 inline-block h-16 w-16 rounded-full object-cover"
-              />
-              <div className="flex flex-col">
-                <h6 className="text-base font-bold">Laila Bahar</h6>
-                <p className="text-sm text-gray-700 dark:text-gray-300">
-                  Designer
-                </p>
-              </div>
-            </div>
           </div>
           <div className="mx-auto bg-white dark:bg-transparent md:border rounded-3xl md:px-12 md:py-8 text-center">
-            <h3 className="text-2xl text-black dark:text-white font-bold md:text-3xl">
-              Get a free quote
-            </h3>
-            <p className="mx-auto mb-6 mt-4 max-w-lg text-sm text-gray-800 dark:text-gray-300 lg:mb-8">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit ut
-              aliquam,purus sit amet luctus magna fringilla urna
+            <SectionHeader
+              title="
+              Get a free quote"
+            />
+            <p className="section-p-typography mb-5">
+              Get in touch with us today to learn more about our services and
+              how we can help you achieve your goals.
             </p>
             {/* Form */}
             <form
