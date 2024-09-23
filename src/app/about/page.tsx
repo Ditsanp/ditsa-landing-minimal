@@ -18,8 +18,10 @@ export default function AboutPage() {
 
       <div className="mx-auto py-12 space-y-16">
         <section>
-          <h2 className="text-3xl font-semibold mb-6">Company's Journey</h2>
-          <p className="text-lg">
+          <h2 className="text-xl md:text-3xl font-semibold mb-6">
+            Company's Journey
+          </h2>
+          <p className="text-sm md:text-lg">
             Ditsa was born from a simple yet profound realization: technology
             has the power to solve complex problems and improve the day-to-day
             lives of individuals and organizations alike. Founded in [Insert
@@ -31,13 +33,15 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-semibold mb-6">Purpose and Goals</h2>
-          <p className="text-lg mb-4">
+          <h2 className="text-xl md:text-3xl font-semibold mb-6">
+            Purpose and Goals
+          </h2>
+          <p className="text-sm md:text-lg mb-4">
             At Ditsa, our mission is to leverage technology for social good. We
             believe that innovation shouldn't just be about profitability; it
             should also enrich lives and create positive social change.
           </p>
-          <p className="text-lg">
+          <p className="text-sm md:text-lg">
             Our goals are simple yet impactful: to develop cutting-edge digital
             solutions that simplify everyday activities for businesses while
             enhancing user experiences. We strive to be at the forefront of
@@ -48,11 +52,11 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
+          <h2 className="text-xl md:text-3xl font-semibold mb-6">Our Team</h2>
           <Card>
             <CardContent className="p-6">
               <Users className="w-12 h-12 text-primary mb-4" />
-              <p className="text-lg">
+              <p className="text-sm md:text-lg">
                 Our team is our greatest asset. At Ditsa, we have assembled a
                 diverse group of passionate professionals, each bringing their
                 unique expertise to the table. From web designers and developers
@@ -64,7 +68,9 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-semibold mb-6">Our Offerings</h2>
+          <h2 className="text-xl md:text-3xl font-semibold mb-6">
+            Our Offerings
+          </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
@@ -88,7 +94,7 @@ export default function AboutPage() {
                 <CardContent className="p-6 flex items-start space-x-4">
                   {offering.icon}
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">
+                    <h3 className="text-lg font-semibold mb-2">
                       {offering.title}
                     </h3>
                     <p className="text-muted-foreground">
@@ -103,7 +109,9 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-semibold mb-6">Customer Opinions</h2>
+          <h2 className="text-xl md:text-3xl font-semibold mb-6">
+            Customer Opinions
+          </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
@@ -136,8 +144,10 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-semibold mb-6">Achievements</h2>
-          <ul className="space-y-4 list-disc list-inside text-lg">
+          <h2 className="text-xl md:text-3xl font-semibold mb-6">
+            Achievements
+          </h2>
+          <ul className="space-y-4 list-disc list-inside text-sm md:text-lg">
             <li>
               Launching [insert number] successful digital marketing campaigns
               that increased client visibility and engagement.
@@ -155,10 +165,10 @@ export default function AboutPage() {
         </section>
 
         <section className="bg-muted p-8 rounded-lg">
-          <h2 className="text-3xl font-semibold mb-6">
+          <h2 className="text-xl md:text-3xl font-semibold mb-6">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-lg mb-6">
+          <p className="text-sm md:text-lg mb-6">
             Join us on this exciting journey towards innovation and positive
             change. Whether you're looking to enhance your digital marketing
             strategy, design a stunning website, or develop custom software
