@@ -1,3 +1,4 @@
+import SectionHeader from "@/components/reusables/section-header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SectionWrapper from "@/components/wrappers/section-wrapper";
@@ -9,7 +10,7 @@ export default function AboutPage() {
     <SectionWrapper>
       <header className="bg-accent-red/70 text-primary-foreground dark:text-white py-12">
         <div className="mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">About Ditsa</h1>
+          <h1 className="text-3xl md:text-7xl bebas-font mb-4">About Ditsa</h1>
           <p className="text-xl">
             Empowering businesses through innovative technology solutions
           </p>
@@ -18,9 +19,7 @@ export default function AboutPage() {
 
       <div className="mx-auto py-12 space-y-16">
         <section>
-          <h2 className="text-xl md:text-3xl font-semibold mb-6">
-            Company&apos;s Journey
-          </h2>
+          <SectionHeader title="Company's Journey" />
           <p className="text-sm md:text-lg">
             Ditsa was born from a simple yet profound realization: technology
             has the power to solve complex problems and improve the day-to-day
@@ -33,9 +32,12 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-xl md:text-3xl font-semibold mb-6">
+          <SectionHeader
+            title="
             Purpose and Goals
-          </h2>
+          
+          "
+          />
           <p className="text-sm md:text-lg mb-4">
             At Ditsa, our mission is to leverage technology for social good. We
             believe that innovation shouldn&apos;t just be about profitability;
@@ -52,7 +54,7 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-xl md:text-3xl font-semibold mb-6">Our Team</h2>
+          <SectionHeader title="Our Team" />
           <Card>
             <CardContent className="p-6">
               <Users className="w-12 h-12 text-primary mb-4" />
@@ -68,9 +70,7 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-xl md:text-3xl font-semibold mb-6">
-            Our Offerings
-          </h2>
+          <SectionHeader title="Our Offerings" />
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
@@ -109,9 +109,8 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-xl md:text-3xl font-semibold mb-6">
-            Customer Opinions
-          </h2>
+          <SectionHeader title="            Customer Opinions" />
+
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
@@ -144,9 +143,7 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-xl md:text-3xl font-semibold mb-6">
-            Achievements
-          </h2>
+          <SectionHeader title="Achievements" />
           <ul className="space-y-4 list-disc list-inside text-sm md:text-lg">
             <li>
               Launching [insert number] successful digital marketing campaigns
@@ -165,9 +162,11 @@ export default function AboutPage() {
         </section>
 
         <section className="bg-muted p-8 rounded-lg">
-          <h2 className="text-xl md:text-3xl font-semibold mb-6">
+          <SectionHeader
+            title="
             Ready to Transform Your Business?
-          </h2>
+          "
+          />
           <p className="text-sm md:text-lg mb-6">
             Join us on this exciting journey towards innovation and positive
             change. Whether you&apos;re looking to enhance your digital
