@@ -75,19 +75,19 @@ export default function AboutPage() {
             {[
               {
                 title: "Digital Marketing",
-                icon: <Rocket className="w-6 h-6" />,
+                icon: <Rocket className="w-12 h-12" />,
               },
               {
                 title: "Web Design and Development",
-                icon: <CheckCircle className="w-6 h-6" />,
+                icon: <CheckCircle className="w-12 h-12" />,
               },
               {
                 title: "App Design and Development",
-                icon: <Rocket className="w-6 h-6" />,
+                icon: <Rocket className="w-12 h-12" />,
               },
               {
                 title: "Software Solutions for Enterprises",
-                icon: <CheckCircle className="w-6 h-6" />,
+                icon: <CheckCircle className="w-12 h-12" />,
               },
             ].map((offering, index) => (
               <Card key={index}>

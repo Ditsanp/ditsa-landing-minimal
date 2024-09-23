@@ -46,10 +46,10 @@ const Section1 = () => {
     <div>
       <Nav />
       <div className="mt-10">
-        <p className="text-center text-white">
+        <p className="text-center px-5 text-sm md:text-lg text-white">
           Copyright &copy; 2024 DITSA. All Rights Reserved
         </p>
-        <p className="text-center text-white mt-5">
+        <p className="text-center text-sm md:text-lg px-5 text-white mt-5">
           Designed and Developed by Sulav Baral (tyzrex)
         </p>
       </div>
