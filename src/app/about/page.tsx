@@ -10,8 +10,8 @@ export default function AboutPage() {
     <SectionWrapper>
       <header className="bg-accent-red/70 text-primary-foreground dark:text-white py-12">
         <div className="mx-auto px-4">
-          <h1 className="text-3xl md:text-7xl bebas-font mb-4">About Ditsa</h1>
-          <p className="text-xl">
+          <h1 className="hero-typography">About Ditsa</h1>
+          <p className="text-lg md:text-xl">
             Empowering businesses through innovative technology solutions
           </p>
         </div>
@@ -20,7 +20,7 @@ export default function AboutPage() {
       <div className="mx-auto py-12 space-y-16">
         <section>
           <SectionHeader title="Company's Journey" />
-          <p className="text-sm md:text-lg">
+          <p className="section-p-typography">
             Ditsa was born from a simple yet profound realization: technology
             has the power to solve complex problems and improve the day-to-day
             lives of individuals and organizations alike. Founded in [Insert
@@ -38,12 +38,12 @@ export default function AboutPage() {
           
           "
           />
-          <p className="text-sm md:text-lg mb-4">
+          <p className="section-p-typography mb-4">
             At Ditsa, our mission is to leverage technology for social good. We
             believe that innovation shouldn&apos;t just be about profitability;
             it should also enrich lives and create positive social change.
           </p>
-          <p className="text-sm md:text-lg">
+          <p className="section-p-typography">
             Our goals are simple yet impactful: to develop cutting-edge digital
             solutions that simplify everyday activities for businesses while
             enhancing user experiences. We strive to be at the forefront of
@@ -58,7 +58,7 @@ export default function AboutPage() {
           <Card>
             <CardContent className="p-6">
               <Users className="w-12 h-12 text-primary mb-4" />
-              <p className="text-sm md:text-lg">
+              <p className="section-p-typography">
                 Our team is our greatest asset. At Ditsa, we have assembled a
                 diverse group of passionate professionals, each bringing their
                 unique expertise to the table. From web designers and developers
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
         <section>
           <SectionHeader title="Achievements" />
-          <ul className="space-y-4 list-disc list-inside text-sm md:text-lg">
+          <ul className="space-y-4 list-disc list-inside section-p-typography">
             <li>
               Launching [insert number] successful digital marketing campaigns
               that increased client visibility and engagement.
@@ -167,7 +167,7 @@ export default function AboutPage() {
             Ready to Transform Your Business?
           "
           />
-          <p className="text-sm md:text-lg mb-6">
+          <p className="section-p-typography mb-6">
             Join us on this exciting journey towards innovation and positive
             change. Whether you&apos;re looking to enhance your digital
             marketing strategy, design a stunning website, or develop custom
