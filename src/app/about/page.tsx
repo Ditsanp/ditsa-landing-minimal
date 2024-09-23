@@ -19,7 +19,7 @@ export default function AboutPage() {
       <div className="mx-auto py-12 space-y-16">
         <section>
           <h2 className="text-xl md:text-3xl font-semibold mb-6">
-            Company's Journey
+            Company&apos;s Journey
           </h2>
           <p className="text-sm md:text-lg">
             Ditsa was born from a simple yet profound realization: technology
@@ -38,8 +38,8 @@ export default function AboutPage() {
           </h2>
           <p className="text-sm md:text-lg mb-4">
             At Ditsa, our mission is to leverage technology for social good. We
-            believe that innovation shouldn't just be about profitability; it
-            should also enrich lives and create positive social change.
+            believe that innovation shouldn&apos;t just be about profitability;
+            it should also enrich lives and create positive social change.
           </p>
           <p className="text-sm md:text-lg">
             Our goals are simple yet impactful: to develop cutting-edge digital
@@ -170,9 +170,9 @@ export default function AboutPage() {
           </h2>
           <p className="text-sm md:text-lg mb-6">
             Join us on this exciting journey towards innovation and positive
-            change. Whether you're looking to enhance your digital marketing
-            strategy, design a stunning website, or develop custom software
-            solutions, Ditsa is here to help.
+            change. Whether you&apos;re looking to enhance your digital
+            marketing strategy, design a stunning website, or develop custom
+            software solutions, Ditsa is here to help.
           </p>
           <Button asChild className="bg-ditsa-cyan font-extrabold" size="lg">
             <Link href={"/work-with-us"}>Contact Us Today</Link>
