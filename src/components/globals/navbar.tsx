@@ -70,7 +70,7 @@ export default function Navbar() {
                             <p>Company</p> <ChevronDown className="h-4 w-4" />
                           </div>
                         </HoverCardTrigger>
-                        <HoverCardContent className="w-52 border py-5 bg-gray-50 text-black rounded-2xl px-10">
+                        <HoverCardContent className="w-52 mt-5 border py-5 bg-background text-black rounded-2xl px-10">
                           <div className="flex flex-col space-y-2">
                             {item.children?.map((subItem, idx: number) => (
                               <Link href={subItem.href} key={idx}>

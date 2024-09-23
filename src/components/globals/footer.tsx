@@ -1,12 +1,5 @@
-import React from "react";
 import MaxWidthWrapper from "../wrappers/max-width-wrapper";
-import {
-  SiFacebook,
-  SiInstagram,
-  SiX,
-  SiGmail,
-  SiGithub,
-} from "@icons-pack/react-simple-icons";
+import { SiFacebook, SiInstagram } from "@icons-pack/react-simple-icons";
 
 export default function Footer() {
   return (
@@ -79,17 +72,17 @@ const Nav = () => {
   return (
     <div>
       <div className="text-lg md:text-xl flex flex-row items-center justify-center w-full gap-5 md:gap-10 text-white">
-        <p>Home</p>
-        <p>Projects</p>
-        <p>About</p>
-        <p>Contact</p>
+        <a href="/">Home</a>
+        <a href="about">About</a>
+        <a href="work-with-us">Contact</a>
       </div>
       <div className="flex flex-row items-center justify-center w-full gap-5 md:gap-10 mt-10">
-        <SiFacebook size={18} className="text-white" />
-        <SiInstagram size={18} className="text-white" />
-        <SiX size={18} className="text-white" />
-        <SiGmail size={18} className="text-white" />
-        <SiGithub size={18} className="text-white" />
+        <a href=" https://www.facebook.com/profile.php?id=100086586747707">
+          <SiFacebook size={18} className="text-white" />
+        </a>
+        <a href="https://www.instagram.com/ditsa_marketing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+          <SiInstagram size={18} className="text-white" />
+        </a>
       </div>
     </div>
   );

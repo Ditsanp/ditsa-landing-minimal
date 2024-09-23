@@ -8,44 +8,46 @@ const people = [
     name: "Manish Pyakurel",
     role: "Project Manager",
     imageUrl: "/images/members/manish.JPG",
-    instagram: "https://www.instagram.com/bishesh._p/",
-    linkedin: "https://www.instagram.com/bishesh._p/",
+    instagram: "https://www.linkedin.com/in/manish-pyakurel-a59a741b8",
+    linkedin: "https://www.instagram.com/_manishpy",
   },
   {
     name: "Sabin Giri",
     role: "Digital Marketing Manager",
     imageUrl: "/images/members/bishesh.jpg",
-    instagram: "https://www.instagram.com/bishesh._p/",
-    linkedin: "https://www.instagram.com/bishesh._p/",
+    instagram: "#",
+    linkedin:
+      "https://www.linkedin.com/in/sabin-giri-a695b7208?trk=contact-info",
   },
   {
     name: "Sandesh Pyakurel",
     role: "Backend Developer",
     imageUrl: "/images/members/sandesh.JPG",
-    instagram: "https://www.instagram.com/bishesh._p/",
-    linkedin: "https://www.instagram.com/bishesh._p/",
+    instagram: "#",
+    linkedin:
+      "https://www.linkedin.com/in/sandesh-pyakurel-714394154?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 
   {
     name: "Sulav Baral",
     role: "Frontend Developer",
-    imageUrl: "/images/members/manish.JPG",
-    instagram: "https://www.instagram.com/bishesh._p/",
-    linkedin: "https://www.instagram.com/bishesh._p/",
+    imageUrl: "/images/members/sulav.jpg",
+    instagram: "https://www.instagram.com/mr.ialboe/",
+    linkedin: "https://www.linkedin.com/in/sulav-baral/",
   },
   {
     name: "Sarjyant Shrestha",
     role: "Graphics Designer ,UI/UX",
     imageUrl: "/images/members/sarjyant.JPG",
-    instagram: "https://www.instagram.com/bishesh._p/",
-    linkedin: "https://www.instagram.com/bishesh._p/",
+    instagram: "https://www.instagram.com/sarjyantshrestha/",
+    linkedin: "https://www.linkedin.com/in/sarjyantshrestha/",
   },
   {
     name: "Rodit Nepal",
     role: "Business Development Manager",
     imageUrl: "/images/members/rodit.JPG",
-    instagram: "https://www.instagram.com/bishesh._p/",
-    linkedin: "https://www.instagram.com/bishesh._p/",
+    instagram: "https://www.instagram.com/_rodit_/",
+    linkedin: "#",
   },
 
   {
@@ -53,21 +55,21 @@ const people = [
     role: "Social Media Manager / SEO Head",
     imageUrl: "/images/members/bishesh.jpg",
     instagram: "https://www.instagram.com/bishesh._p/",
-    linkedin: "https://www.instagram.com/bishesh._p/",
+    linkedin: "https://www.linkedin.com/in/bishesh-pokharel-041481204/",
   },
   {
     name: "Subashish Shrestha",
     role: "Content Writer",
     imageUrl: "/images/members/subhashish.jpg",
-    instagram: "https://www.instagram.com/bishesh._p/",
-    linkedin: "https://www.instagram.com/bishesh._p/",
+    instagram: "https://www.instagram.com/shubhashish.__/",
+    linkedin: "#",
   },
   {
     name: "Amrit GC",
     role: "Video Content Creator",
-    imageUrl: "/images/members/manish.JPG",
-    instagram: "https://www.instagram.com/bishesh._p/",
-    linkedin: "https://www.instagram.com/bishesh._p/",
+    imageUrl: "/images/members/amrit.webp",
+    instagram: "https://www.instagram.com/amrit_chhetri_03/",
+    linkedin: "#",
   },
   // More people...
 ];
@@ -78,7 +80,7 @@ export default function Page() {
       <SectionHeader title="Meet our team" />
       <div className="mx-auto grid gap-x-8 gap-y-20">
         <div>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
             Meet the people behind DITSA. We are a team of passionate
             individuals who are dedicated to making a difference in the world of
             digital transformation. Our team is made up of experts in various
@@ -101,22 +103,22 @@ export default function Page() {
                   className="h-16 w-16 rounded-full"
                 />
                 <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                  <h3 className="text-lg leading-7 tracking-tight text-gray-900 dark:text-gray-400 font-bold">
                     {person.name}
                   </h3>
                   <p className="text-sm font-semibold leading-6 text-indigo-600">
                     {person.role}
                   </p>
                   <div className="flex items-center gap-3 mt-2">
-                    {person.linkedin && (
-                      <>
+                    {person.linkedin !== "#" && (
+                      <a href={person.linkedin}>
                         <SiLinkedin className="h-4 w-4" />
-                      </>
+                      </a>
                     )}
-                    {person.instagram && (
-                      <>
+                    {person.instagram !== "#" && (
+                      <a href={person.instagram}>
                         <SiInstagram className="h-4 w-4" />
-                      </>
+                      </a>
                     )}
                   </div>
                 </div>
