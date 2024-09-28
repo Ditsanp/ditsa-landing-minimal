@@ -173,7 +173,11 @@ export default function AboutPage() {
             marketing strategy, design a stunning website, or develop custom
             software solutions, Ditsa is here to help.
           </p>
-          <Button asChild className="bg-ditsa-cyan font-extrabold" size="lg">
+          <Button
+            asChild
+            className="bg-ditsa-cyan text-white font-extrabold"
+            size="lg"
+          >
             <Link href={"/work-with-us"}>Contact Us Today</Link>
           </Button>
         </section>
