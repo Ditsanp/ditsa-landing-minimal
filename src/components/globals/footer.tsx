@@ -49,9 +49,6 @@ const Section1 = () => {
         <p className="text-center px-5 text-sm md:text-lg text-white">
           Copyright &copy; 2024 DITSA. All Rights Reserved
         </p>
-        <p className="text-center text-sm md:text-lg px-5 text-white mt-5">
-          Designed and Developed by Sulav Baral (tyzrex)
-        </p>
       </div>
     </div>
   );

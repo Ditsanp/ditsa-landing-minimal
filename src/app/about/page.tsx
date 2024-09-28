@@ -23,10 +23,10 @@ export default function AboutPage() {
           <p className="section-p-typography">
             Ditsa was born from a simple yet profound realization: technology
             has the power to solve complex problems and improve the day-to-day
-            lives of individuals and organizations alike. Founded in [Insert
-            Year], we began our journey as a small team of tech enthusiasts
-            committed to making a difference through innovation. Over the years,
-            we have evolved into a full-fledged information technology company,
+            lives of individuals and organizations alike. Founded in 2024, we
+            began our journey as a small team of tech enthusiasts committed to
+            making a difference through innovation. Over the years, we have
+            evolved into a full-fledged information technology company,
             empowering businesses to harness the power of digital solutions.
           </p>
         </section>
@@ -141,7 +141,7 @@ export default function AboutPage() {
             ))}
           </div>
         </section>
-
+        {/* 
         <section>
           <SectionHeader title="Achievements" />
           <ul className="space-y-4 list-disc list-inside section-p-typography">
@@ -159,7 +159,7 @@ export default function AboutPage() {
               our dedication to quality and impact.
             </li>
           </ul>
-        </section>
+        </section> */}
 
         <section className="bg-muted p-8 rounded-lg">
           <SectionHeader

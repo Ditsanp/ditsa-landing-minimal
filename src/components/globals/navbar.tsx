@@ -1,12 +1,17 @@
-import { useTheme } from "next-themes";
 import MaxWidthWrapper from "../wrappers/max-width-wrapper";
 import ThemeSwitcher from "../atoms/theme-switcher";
 import BurgerMenu from "../molecules/burger-menu";
 import Link from "next/link";
-import { HoverCardTrigger, HoverCard } from "../ui/hover-card";
-import { Button } from "../ui/button";
-import { HoverCardContent } from "@radix-ui/react-hover-card";
 import { ChevronDown } from "lucide-react";
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 //todo make the links disappear when the screen is small and add a hover menu
 
@@ -35,15 +40,15 @@ const navItems = [
   },
   {
     title: "Services",
-    href: "#services",
+    href: "/#services",
   },
   {
     title: "Ditsa-AI",
     href: "/ditsa-ai",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Contact Us",
+    href: "#contact",
   },
 ];
 
@@ -64,22 +69,24 @@ export default function Navbar() {
                 {navItems.map((item, index) => {
                   if (item.title === "Company") {
                     return (
-                      <HoverCard key={index}>
-                        <HoverCardTrigger asChild>
+                      <DropdownMenu key={index}>
+                        <DropdownMenuTrigger asChild>
                           <div className="flex gap-2 items-center cursor-pointer">
                             <p>Company</p> <ChevronDown className="h-4 w-4" />
                           </div>
-                        </HoverCardTrigger>
-                        <HoverCardContent className="w-52 mt-5 border py-5 bg-background text-black rounded-2xl px-10">
-                          <div className="flex flex-col space-y-2">
-                            {item.children?.map((subItem, idx: number) => (
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-56">
+                          <DropdownMenuLabel>Our Company</DropdownMenuLabel>
+                          <DropdownMenuSeparator />
+                          {item.children?.map((subItem, idx: number) => (
+                            <DropdownMenuItem asChild>
                               <Link href={subItem.href} key={idx}>
                                 {subItem.title}
                               </Link>
-                            ))}
-                          </div>
-                        </HoverCardContent>
-                      </HoverCard>
+                            </DropdownMenuItem>
+                          ))}
+                        </DropdownMenuContent>
+                      </DropdownMenu>
                     );
                   }
                   return (

@@ -55,7 +55,7 @@ export default function ContactUsSection() {
   return (
     <SectionWrapper>
       {/* Container */}
-      <div className="md:py-20 mx-auto text-black dark:text-white">
+      <div id="contact" className="md:py-20 mx-auto text-black dark:text-white">
         {/* Component */}
         <div className="grid items-start gap-8 sm:gap-20 lg:grid-cols-2">
           <div className="max-w-3xl">

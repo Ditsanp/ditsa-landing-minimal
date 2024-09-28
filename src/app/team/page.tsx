@@ -8,13 +8,13 @@ const people = [
     name: "Manish Pyakurel",
     role: "Project Manager",
     imageUrl: "/images/members/manish.JPG",
-    instagram: "https://www.linkedin.com/in/manish-pyakurel-a59a741b8",
-    linkedin: "https://www.instagram.com/_manishpy",
+    instagram: "https://www.instagram.com/_manishpy",
+    linkedin: "https://www.linkedin.com/in/manish-pyakurel-a59a741b8",
   },
   {
     name: "Sabin Giri",
     role: "Digital Marketing Manager",
-    imageUrl: "/images/members/bishesh.jpg",
+    imageUrl: "/images/members/sabin.jpeg",
     instagram: "#",
     linkedin:
       "https://www.linkedin.com/in/sabin-giri-a695b7208?trk=contact-info",
@@ -106,17 +106,25 @@ export default function Page() {
                   <h3 className="text-lg leading-7 tracking-tight text-gray-900 dark:text-gray-400 font-bold">
                     {person.name}
                   </h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">
+                  <p className="text-sm font-semibold leading-6 text-ditsa-cyan dark:text-ditsa-lightestcyan">
                     {person.role}
                   </p>
                   <div className="flex items-center gap-3 mt-2">
                     {person.linkedin !== "#" && (
-                      <a href={person.linkedin}>
+                      <a
+                        href={person.linkedin}
+                        //open in new tab
+                        target="_blank"
+                      >
                         <SiLinkedin className="h-4 w-4" />
                       </a>
                     )}
                     {person.instagram !== "#" && (
-                      <a href={person.instagram}>
+                      <a
+                        href={person.instagram}
+                        //open in new tab
+                        target="_blank"
+                      >
                         <SiInstagram className="h-4 w-4" />
                       </a>
                     )}
