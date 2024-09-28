@@ -79,10 +79,8 @@ export default function Navbar() {
                           <DropdownMenuLabel>Our Company</DropdownMenuLabel>
                           <DropdownMenuSeparator />
                           {item.children?.map((subItem, idx: number) => (
-                            <DropdownMenuItem asChild>
-                              <Link href={subItem.href} key={idx}>
-                                {subItem.title}
-                              </Link>
+                            <DropdownMenuItem asChild key={idx}>
+                              <Link href={subItem.href}>{subItem.title}</Link>
                             </DropdownMenuItem>
                           ))}
                         </DropdownMenuContent>
