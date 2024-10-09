@@ -21,7 +21,7 @@ const nunu = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "DITSANP",
+  title: "DITSA",
   description:
     " DITSA: Your Gateway for Digital Transformation with Innovative Solutions and Advanced Technology",
   keywords: [
