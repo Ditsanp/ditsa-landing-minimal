@@ -71,15 +71,11 @@ export default function ProjectCard({
                   <motion.div
                     style={{ y }}
                     key={`i_${i}`}
-                    // className="h-full object-center object-contain w-full"
                     className={style.imageContainer}
-                    //show only one image in small screen
                   >
-                    <Image
+                    <img
                       src={src}
-                      // placeholder="blur"
                       alt="image"
-                      //   fill
                       className={
                         "object-cover border object-center w-full h-full rounded-lg gap-10 !m-0 !p-0" +
                         "aspect-" +
@@ -95,7 +91,7 @@ export default function ProjectCard({
             bg-gradient-to-b from-ditsa-cyan to-accent-green  dark:text-white !px-5 border-none
             rounded-2xl"
             >
-              <Image
+              <img
                 src={images[1].src}
                 // placeholder="blur"
                 alt="image"

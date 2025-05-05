@@ -5,8 +5,6 @@ const nextConfig = {
   /* config options here */
   images: {
     unoptimized: true,
-  },
-  images: {
     remotePatterns: [
       {
         protocol: "https",
