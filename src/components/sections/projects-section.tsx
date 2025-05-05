@@ -1,22 +1,22 @@
-import Web1 from "@/../public/images/services/web/web.png";
-import Web2 from "@/../public/images/services/web/web1.png";
-import Web3 from "@/../public/images/services/web/web3.png";
+import Web1 from "/images/services/web/web.png";
+import Web2 from "/images/services/web/web1.png";
+import Web3 from "/images/services/web/web3.png";
 
-import App1 from "@/../public/images/services/app/app1.png";
-import App2 from "@/../public/images/services/app/app2.jpg";
-import App3 from "@/../public/images/services/app/app3.png";
+import App1 from "/images/services/app/app1.png";
+import App2 from "/images/services/app/app2.jpg";
+import App3 from "/images/services/app/app3.png";
 
-import Data1 from "@/../public/images/services/data/data1.png";
-import Data2 from "@/../public/images/services/data/data2.jpg";
-import Data3 from "@/../public/images/services/data/data3.png";
+import Data1 from "/images/services/data/data1.png";
+import Data2 from "/images/services/data/data2.jpg";
+import Data3 from "/images/services/data/data3.png";
 
-import DM1 from "@/../public/images/services/digital-marketing/dm1.jpg";
-import DM2 from "@/../public/images/services/digital-marketing/dm2.png";
-import DM3 from "@/../public/images/services/digital-marketing/dm3.png";
+import DM1 from "/images/services/digital-marketing/dm1.jpg";
+import DM2 from "/images/services/digital-marketing/dm2.png";
+import DM3 from "/images/services/digital-marketing/dm3.png";
 
-import GD1 from "@/../public/images/services/graphic/gd1.png";
-import GD2 from "@/../public/images/services/graphic/gd3.png";
-import GD3 from "@/../public/images/services/graphic/gd4.png";
+import GD1 from "/images/services/graphic/gd1.png";
+import GD2 from "/images/services/graphic/gd3.png";
+import GD3 from "/images/services/graphic/gd4.png";
 
 import ProjectCard from "../reusables/project-card";
 import SectionHeader from "../reusables/section-header";
