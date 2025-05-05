@@ -28,5 +28,5 @@ jobs:
         with:
           server: ftp.newssawal.com
           username: ditsa_github@ditsa.com.np
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: V6qwDJqfrB]X
           local-dir: ./out/
