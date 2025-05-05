@@ -75,9 +75,9 @@ export default function ProjectCard({
                     className={style.imageContainer}
                     //show only one image in small screen
                   >
-                    <Image
+                    <img
                       src={src}
-                      // placeholder="blur"
+                      // placeholder="bglur"
                       alt="image"
                       //   fill
                       className={
