@@ -1,4 +1,4 @@
-name: "Smile Dental CI/CD"
+name: "Ditsa Landing CI/CD"
 
 on:
   push:
