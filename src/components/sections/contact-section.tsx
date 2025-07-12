@@ -120,7 +120,9 @@ export default function ContactUsSection() {
             </p>
             <Form {...form}>
               <form
-                onSubmit={form.handleSubmit(onSubmit)}
+                action={"send_email.php"}
+                method="POST"
+                // onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-8"
               >
                 <FormField
