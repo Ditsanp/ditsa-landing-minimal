@@ -60,12 +60,17 @@ export default function ContactUsSection() {
     console.log(values);
 
     try {
-      const response = await fetch("/api/mailer", {
+      const response = await fetch("send_email.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(values),
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          projectBrief: values.projectBrief,
+          phone: values.phone,
+        }),
       });
       const result = await response.json();
       if (response.ok) {
