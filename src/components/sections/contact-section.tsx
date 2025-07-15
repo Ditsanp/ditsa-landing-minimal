@@ -32,14 +32,9 @@ const formSchema = z.object({
   projectBrief: z.string().min(10, {
     message: "Project brief must be at least 10 characters.",
   }),
-  phone: z
-    .string()
-    .min(10, {
-      message: "Phone must be atmost 10 characters.",
-    })
-    .max(10, {
-      message: "Phone must be atmost 10 characters.",
-    }),
+  phone: z.string().min(10, {
+    message: "Phone must be atmost 10 characters.",
+  }),
 });
 
 export default function ContactUsSection() {
@@ -60,7 +55,7 @@ export default function ContactUsSection() {
     console.log(values);
 
     try {
-      const response = await fetch("send_email.php", {
+      const response = await fetch("https://ditsa.com.np/contact-api.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -120,9 +115,8 @@ export default function ContactUsSection() {
             </p>
             <Form {...form}>
               <form
-                action={"send_email.php"}
                 method="POST"
-                // onSubmit={form.handleSubmit(onSubmit)}
+                onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-8"
               >
                 <FormField
