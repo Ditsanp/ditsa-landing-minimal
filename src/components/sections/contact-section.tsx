@@ -52,10 +52,9 @@ export default function ContactUsSection() {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setLoading(true);
-    console.log(values);
 
     try {
-      const response = await fetch("https://ditsa.com.np/contact-api.php", {
+      const response = await fetch("https://ditsa.com.np/send_email.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
