@@ -39,12 +39,12 @@ const navItems = [
     ],
   },
   {
-    title: "Services",
-    href: "/#services",
+    title: "Work",
+    href: "/#work",
   },
   {
-    title: "Ditsa-AI",
-    href: "/ditsa-ai",
+    title: "Services",
+    href: "/#services",
   },
   {
     title: "Contact Us",
@@ -58,20 +58,26 @@ export default function Navbar() {
       <header className=" flex items-center sticky top-0 bg-white dark:bg-background z-20  border-b">
         <MaxWidthWrapper>
           <nav className="h-20 max-w-[90%] mx-auto md:h-28 flex justify-between items-center  w-full">
-            <Link prefetch={false} href={"/"}>
-              <div className="text-4xl md:text-[45px] text-ditsa-cyan dark:text-ditsa-lightcyan bebas-font">
-                DITSA
-              </div>
+            <Link
+              prefetch={false}
+              href="/"
+              aria-label="DITSA home"
+              className="flex items-center"
+            >
+              <span
+                aria-hidden="true"
+                className="ditsa-brandmark h-10 w-10 md:h-12 md:w-12"
+              />
             </Link>
 
-            <ul className="flex space-x-4 text-2xl items-center">
-              <li className="hidden md:flex items-center text-lg gap-10 mr-10">
+            <ul className="flex items-center gap-2 md:gap-3">
+              <li className="hidden items-center gap-4 text-sm font-medium md:flex lg:mr-2 lg:gap-6 lg:text-base xl:mr-4 xl:gap-8 xl:text-[17px]">
                 {navItems.map((item, index) => {
                   if (item.title === "Company") {
                     return (
                       <DropdownMenu key={index}>
                         <DropdownMenuTrigger asChild>
-                          <div className="flex gap-2 items-center cursor-pointer">
+                          <div className="flex cursor-pointer items-center gap-1.5 transition-colors hover:text-ditsa-cyan dark:hover:text-ditsa-lightcyan">
                             <p>Company</p> <ChevronDown className="h-4 w-4" />
                           </div>
                         </DropdownMenuTrigger>
@@ -88,7 +94,11 @@ export default function Navbar() {
                     );
                   }
                   return (
-                    <Link key={index} href={item.href}>
+                    <Link
+                      key={index}
+                      href={item.href}
+                      className="transition-colors hover:text-ditsa-cyan dark:hover:text-ditsa-lightcyan"
+                    >
                       <p>{item.title}</p>
                     </Link>
                   );

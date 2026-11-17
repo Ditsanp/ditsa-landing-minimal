@@ -5,6 +5,7 @@ import AboutSection from "@/components/sections/about-section";
 import ContactUsSection from "@/components/sections/contact-section";
 import HeroSection from "@/components/sections/hero-section";
 import OurFocusAreas from "@/components/sections/our-focus-areas";
+import SelectedWorkSection from "@/components/sections/selected-work-section";
 import ServicesSection from "@/components/sections/projects-section";
 import MaxWidthWrapper from "@/components/wrappers/max-width-wrapper";
 
@@ -15,6 +16,8 @@ export default function Home() {
         <HeroSection />
         <ClientMarquee />
         <AboutSection />
+
+        <SelectedWorkSection />
 
         <ServicesSection />
 

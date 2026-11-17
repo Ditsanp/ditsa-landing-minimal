@@ -15,10 +15,6 @@ const navItems = [
     href: "/about",
   },
   {
-    title: "Ditsa-AI",
-    href: "/ditsa-ai",
-  },
-  {
     title: "Team",
     href: "/team",
   },

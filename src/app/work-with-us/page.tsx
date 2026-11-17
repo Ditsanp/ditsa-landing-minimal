@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import SectionWrapper from "@/components/wrappers/section-wrapper";
 import SectionHeader from "@/components/reusables/section-header";
-import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -124,15 +123,6 @@ export default function ContactPage() {
               </div>
             </address>
 
-            <div className="flex rounded-3xl order-first md:order-last items-center w-full lg:justify-center">
-              <Image
-                src="/robot.png"
-                alt="Hero Image"
-                width={400}
-                height={400}
-                className="rounded-3xl"
-              />
-            </div>
           </div>
           <div className="mx-auto bg-white dark:bg-transparent md:border rounded-3xl md:px-12 md:py-8 text-center">
             <SectionHeader title="Get a free quote" />

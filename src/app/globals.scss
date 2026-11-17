@@ -37,32 +37,32 @@
   }
 
   .dark {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 93%;
+    --background: 225 12% 8%;
+    --foreground: 0 0% 94%;
 
-    --card: 0 0% 13%;
+    --card: 225 10% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0, 0%, 13%;
+    --popover: 225 10% 12%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 13%;
 
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 225 8% 18%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 225 8% 18%;
+    --muted-foreground: 225 8% 70%;
 
-    --accent: 240 3.7% 15.9%;
+    --accent: 225 8% 18%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 225 8% 21%;
+    --input: 225 8% 21%;
     --ring: 240 4.9% 83.9%;
     --text-gradient: linear-gradient(180deg, #fff, #adadad);
     --accent-color: linear-gradient(180deg, #de443e, #ea2d27);
@@ -99,7 +99,7 @@ h1 h2 h3 h4 h5 h6 {
 
 @layer components {
   .hero-typography {
-    @apply text-4xl md:text-6xl xl:text-7xl xl:leading-[1.125] text-start  bebas-font;
+    @apply text-4xl leading-[1.04] text-start bebas-font md:text-5xl lg:text-[3.25rem] xl:text-[3.5rem] 2xl:text-7xl;
   }
 
   .hero-typography-normal {
@@ -107,11 +107,11 @@ h1 h2 h3 h4 h5 h6 {
   }
 
   .section-title-typography {
-    @apply text-2xl md:text-4xl bebas-font xl:text-[45px] uppercase mb-5 md:mb-10;
+    @apply mb-5 text-2xl uppercase bebas-font md:mb-8 md:text-3xl lg:text-4xl xl:mb-10 xl:text-[42px];
   }
 
   .section-p-typography {
-    @apply text-[14px] leading-relaxed md:text-[20px] md:leading-8 text-[#474747] dark:text-[#e6e6e6];
+    @apply text-[14px] leading-relaxed text-[#474747] dark:text-[#e6e6e6] md:text-base md:leading-7 lg:text-[17px] xl:text-lg;
   }
 
   .sub-section-title-typography {
@@ -136,6 +136,30 @@ h1 h2 h3 h4 h5 h6 {
 body {
   transition: background-color 0.4s, color 0.4s, border 0.4s;
   // overflow: hidden;
+}
+
+.ditsa-brandmark {
+  display: inline-block;
+  flex: none;
+  background-color: #244bd4;
+  -webkit-mask: url("/images/staging/brandmark.png") center / contain no-repeat;
+  mask: url("/images/staging/brandmark.png") center / contain no-repeat;
+}
+
+.dark .ditsa-brandmark {
+  background-color: #4165f5;
+}
+
+.dark .text-accent-red,
+.dark .text-ditsa-cyan,
+.dark .text-ditsa-lightcyan,
+.dark .text-ditsa-lightestcyan {
+  color: #4165f5 !important;
+}
+
+.dark .bg-ditsa-cyan,
+.dark .bg-accent-red {
+  background-color: #3155dc;
 }
 
 @media (min-width: 1920px) {
@@ -352,7 +376,7 @@ body {
 }
 
 .area {
-  background: #053d42;
+  background: #000000;
   /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
   width: 100%;
   height: 100%;
