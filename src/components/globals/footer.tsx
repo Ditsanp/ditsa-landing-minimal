@@ -1,5 +1,10 @@
 import MaxWidthWrapper from "../wrappers/max-width-wrapper";
-import { SiFacebook, SiInstagram } from "@icons-pack/react-simple-icons";
+import {
+  SiFacebook,
+  SiInstagram,
+  SiLinkedin,
+  SiTiktok,
+} from "@icons-pack/react-simple-icons";
 
 export default function Footer() {
   return (
@@ -46,7 +51,7 @@ const Section1 = () => {
 
   return (
     <div>
-      <Nav />
+      <SocialLinks />
       <div className="mt-10">
         <p className="text-center px-5 text-sm md:text-lg text-white">
           Copyright &copy; {year} Ditsa Technology Pvt. Ltd. All Rights Reserved
@@ -60,8 +65,8 @@ const Section2 = () => {
   return (
     <div className="mb-10 flex flex-col items-center">
       <h1 className="text-[14vw] averta-bold leading-[0.8] mt-10 text-white">
-        <span className="dark:text-gradient bebas-font">DITSA</span>
-        <span className="text-accent-red">.</span>
+        <span className="bebas-font">DITSA</span>
+        <span className="text-accent-red dark:text-ditsa-lightcyan">.</span>
       </h1>
       <div className="mt-6 w-full px-5 text-center text-white">
         <p className="text-base font-semibold md:text-lg">
@@ -96,20 +101,45 @@ const Section2 = () => {
   );
 };
 
-const Nav = () => {
+const SocialLinks = () => {
   return (
     <div>
-      <div className="text-lg md:text-xl flex flex-row items-center justify-center w-full gap-5 md:gap-10 text-white">
-        <a href="/">Home</a>
-        <a href="about">About</a>
-        <a href="work-with-us">Contact</a>
-      </div>
-      <div className="flex flex-row items-center justify-center w-full gap-5 md:gap-10 mt-10">
-        <a href=" https://www.facebook.com/profile.php?id=100086586747707">
-          <SiFacebook size={18} className="text-white" />
+      <div className="mt-8 flex w-full items-center justify-center gap-6 md:gap-8">
+        <a
+          aria-label="Instagram"
+          href="https://www.instagram.com/ditsatechnology?rpxt=MXEwNjFlanVkNGxiOQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white transition-colors hover:text-ditsa-lightcyan"
+        >
+          <SiInstagram size={20} />
         </a>
-        <a href="https://www.instagram.com/ditsa_marketing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-          <SiInstagram size={18} className="text-white" />
+        <a
+          aria-label="Facebook"
+          href="https://www.facebook.com/share/1AARPNZCHM/?mibextid=wwXIfr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white transition-colors hover:text-ditsa-lightcyan"
+        >
+          <SiFacebook size={20} />
+        </a>
+        <a
+          aria-label="TikTok"
+          href="https://www.tiktok.com/@ditsa.technology?_r=1&_t=ZS-9BTO5oDmUHX"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white transition-colors hover:text-ditsa-lightcyan"
+        >
+          <SiTiktok size={20} />
+        </a>
+        <a
+          aria-label="LinkedIn"
+          href="https://www.linkedin.com/company/ditsa-technology/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white transition-colors hover:text-ditsa-lightcyan"
+        >
+          <SiLinkedin size={20} />
         </a>
       </div>
     </div>

@@ -63,7 +63,7 @@ export default function ProjectCard({
             </div>
             <div
               className="hidden md:flex justify-center relative w-full overflow-hidden h-[45vh] md:h-[60vh] 
-            bg-gradient-to-b from-ditsa-cyan to-accent-green  dark:text-white
+            bg-transparent dark:text-white
             rounded-2xl"
             >
               {images.map(({ src, y }, i) => {
@@ -88,7 +88,7 @@ export default function ProjectCard({
             </div>
             <div
               className="md:hidden justify-center relative w-full overflow-hidden h-[300px] 
-            bg-gradient-to-b from-ditsa-cyan to-accent-green  dark:text-white !px-5 border-none
+            bg-transparent dark:text-white !px-5 border-none
             rounded-2xl"
             >
               <img

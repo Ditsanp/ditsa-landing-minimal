@@ -17,14 +17,21 @@ export default function ClientMarquee() {
   }, []);
 
   const clients = [
-    { src: "/images/clients/epharma.png", alt: "Epharma" },
-    { src: "/images/clients/patan.webp", alt: "Patan Heritage" },
-    { src: "/images/clients/petskhana.png", alt: "Petskhana" },
-    { src: "/images/clients/runshoes.png", alt: "Run Shoes" },
+    { src: "/images/staging/client-narmin.webp", alt: "NARMIN" },
     {
-      src: "/images/clients/truehimalayanfoods.png",
-      alt: "True Himalayan Foods",
+      src: "/images/staging/client-kshamadevi-group.webp",
+      alt: "Kshamadevi Group",
     },
+    {
+      src: "/images/staging/client-canixa-life-sciences.webp",
+      alt: "Canixa Life Sciences",
+    },
+    {
+      src: "/images/staging/client-jasmine-hygiene.webp",
+      alt: "Jasmine Hygiene",
+    },
+    { src: "/images/staging/client-poison-jeans.webp", alt: "Poison Jeans" },
+    { src: "/images/staging/client-jenish-paints.webp", alt: "Jenish Paints" },
   ];
 
   return (
@@ -36,16 +43,14 @@ export default function ClientMarquee() {
           className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
         >
           {clients.map((client, index) => (
-            <li key={index}>
-              <img
-                src={client.src}
-                alt={client.alt}
-                className={
-                  client.alt === "True Himalayan Foods"
-                    ? "h-32 md:h-32 w-auto object-contain"
-                    : "h-40 md:h-52 w-auto object-contain"
-                }
-              />
+            <li key={index} className="flex items-center">
+              <div className="flex h-16 w-28 items-center justify-center rounded-lg bg-white p-2.5 shadow-sm md:h-20 md:w-36">
+                <img
+                  src={client.src}
+                  alt={client.alt}
+                  className="h-full w-full object-contain"
+                />
+              </div>
             </li>
           ))}
         </ul>
