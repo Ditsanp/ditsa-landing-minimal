@@ -7,12 +7,10 @@ export default function AboutSection() {
       <SectionWrapper>
         <SectionHeader title="about us" />
         <p className="section-p-typography">
-          At DITSA, we fuel your digital transformation with smart, innovative
-          solutions and latest technology. Our team excel in developing tailored
-          strategies that promote growth and enhance efficiency, simplifying
-          complicated challenges. Our team excels at crafting unique strategies
-          that simplify challenges and drive growth. We&apos;re committed to
-          transforming your business with visionary tech and creative insights.
+          Ditsa Technology Pvt. Ltd. is a digital marketing and technology
+          company based in Bhaktapur, Nepal. We help businesses grow with
+          thoughtful digital marketing, website development, custom app and
+          software development, and AI and data analytics solutions.
           {/* <br />
           <br /> */}
           {/* I&apos;m a self-taught developer who&apos;s passionate about building

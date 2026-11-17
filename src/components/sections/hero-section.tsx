@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { Button } from "../ui/button";
 import SectionWrapper from "../wrappers/section-wrapper";
 import Image from "next/image";
 
@@ -10,15 +8,13 @@ export default function HeroSection() {
         <div className="flex flex-col md:flex-row items-center">
           <div>
             <h1 className="hero-typography uppercase">
-              DITSA: Your Gateway for Digital Transformation with Innovative
-              Solutions and Advanced Technology
+              Ditsa Technology Pvt. Ltd. — Your Digital Growth Partner
             </h1>
             <p className="section-p-typography mt-10">
-              We are a team of experts in digital transformation, providing
-              innovative solutions and advanced technology to help you grow your
-              business. Our mission is to help you succeed in the digital age by
-              providing you with the tools and resources you need to thrive in
-              today&apos;s competitive marketplace.
+              A digital marketing and technology company based in Bhaktapur,
+              Nepal. We help businesses grow through digital marketing, website
+              development, custom apps and software, and AI-powered data
+              analytics.
             </p>
           </div>
 

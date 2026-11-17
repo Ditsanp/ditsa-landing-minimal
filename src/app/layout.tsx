@@ -21,9 +21,9 @@ const nunu = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "DITSA",
+  title: "Ditsa Technology Pvt. Ltd. | Digital Marketing & Technology",
   description:
-    " DITSA: Your Gateway for Digital Transformation with Innovative Solutions and Advanced Technology",
+    "Ditsa Technology Pvt. Ltd. is a digital marketing and technology company based in Bhaktapur, Nepal, offering web, app, software, AI, and data analytics services.",
   keywords: [
     "DITSA",
     "Digital Transformation",
@@ -40,13 +40,11 @@ export const metadata: Metadata = {
     "Digital Transformation Company",
   ],
   openGraph: {
-    title:
-      "DITSA: Your Gateway for Digital Transformation with Innovative Solutions and Advanced Technology",
+    title: "Ditsa Technology Pvt. Ltd. | Digital Marketing & Technology",
     description:
-      "DITSA: Your Gateway for Digital Transformation with Innovative Solutions and Advanced Technology",
+      "Digital marketing and technology services based in Bhaktapur, Nepal.",
     url: "https://ditsa.com.np/",
-    siteName:
-      "DITSA: Your Gateway for Digital Transformation with Innovative Solutions and Advanced Technology",
+    siteName: "Ditsa Technology Pvt. Ltd.",
     images: [
       {
         url: "https://ditsa.com.np/ditsaog.webp",

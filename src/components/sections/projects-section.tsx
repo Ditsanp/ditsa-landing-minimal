@@ -24,7 +24,7 @@ export default function ServicesSection() {
 
 const projects = [
   {
-    name: "Web Design and Development",
+    name: "Website Development",
     description:
       "Our web development services focus on creating websites that are not only visually stunning but also highly functional. We offer custom website design tailored to reflect your brand identity, responsive design to ensure your website looks great and performs well on all devices, and e-commerce solutions for building secure and scalable online stores. Additionally, we develop websites on content management systems (CMS) like WordPress, Joomla, and Drupal, and provide regular updates and maintenance to keep your site secure and up-to-date. Our goal is to create user-friendly websites that deliver an exceptional user experience and drive business growth.",
     techs: [
@@ -65,7 +65,7 @@ const projects = [
     ],
   },
   {
-    name: "Apps and Software Development",
+    name: "App & Software Development",
     description:
       "We specialize in developing comprehensive digital solutions, including mobile applications and custom software tailored to your business needs. Our app development services encompass the entire lifecycle, from ideation to deployment, ensuring that we create intuitive and engaging user interfaces through UI/UX design. We build robust native applications for Android and iOS platforms and utilize frameworks like Flutter and React Native for cross-platform development. In software development, we provide bespoke solutions to solve unique business challenges, scalable enterprise applications, and software as a service (SaaS) platform accessible over the internet. Our process includes rigorous testing and quality assurance to guarantee flawless performance and ongoing maintenance and support to keep your solutions updated and running smoothly.",
     techs: [
@@ -90,30 +90,9 @@ const projects = [
     ],
   },
   {
-    name: "Graphics and Motion Designing",
+    name: "AI & Data Analytics",
     description:
-      "Our team of creative professionals brings your ideas to life with captivating graphics and animations. We create memorable logos and brand identities, design brochures, flyers, and other promotional materials, and produce engaging visuals tailored for social media platforms. Our expertise in motion graphics and animation allows us to produce dynamic animations for ads, explainer videos, and more, while our infographics transform data into visually appealing and easily understandable formats.",
-    techs: [
-      "graphics design",
-      "motion design",
-      "branding",
-      "marketing collateral",
-      "social media graphics",
-      "animations",
-      "infographics",
-      "visual storytelling",
-    ],
-    className: "order-last",
-    images: [
-      "/images/services/graphic/gd3.png",
-      "/images/services/graphic/gd4.png",
-      "/images/services/graphic/gd1.png",
-    ],
-  },
-  {
-    name: "Data Analytics and Visualization",
-    description:
-      "We help you harness the power of data to make informed business decisions. Our services include data collection and processing from various sources, implementing business intelligence (BI) tools to analyze data and generate insights, and creating dashboards and visual reports that make data easy to understand. We utilize predictive analytics to forecast future trends and outcomes and offer data strategy consulting to help you develop and implement a data-driven strategy.",
+      "We help you turn data into clear, useful insights and apply AI to real business needs. Our services include data collection and processing, business intelligence (BI), dashboards and visual reports, predictive analytics, and data strategy consulting to support informed, data-driven decisions.",
     techs: [
       "data analytics",
       "data visualization",

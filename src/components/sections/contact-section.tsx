@@ -96,6 +96,33 @@ export default function ContactUsSection() {
               to help you succeed.
             </p>
 
+            <address className="mt-8 space-y-4 not-italic text-left">
+              <div>
+                <h3 className="font-semibold">Registered Office</h3>
+                <p className="section-p-typography">
+                  Madhyapur Thimi, Bhaktapur, Nepal
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold">Phone</h3>
+                <a
+                  className="section-p-typography hover:underline"
+                  href="tel:+9779867676078"
+                >
+                  +977 9867676078
+                </a>
+              </div>
+              <div>
+                <h3 className="font-semibold">Email</h3>
+                <a
+                  className="section-p-typography hover:underline"
+                  href="mailto:info@ditsa.com.np"
+                >
+                  info@ditsa.com.np
+                </a>
+              </div>
+            </address>
+
             <div className="flex rounded-3xl order-first md:order-last items-center w-full lg:justify-center">
               <Image
                 src="/robot.png"

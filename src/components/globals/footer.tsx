@@ -42,12 +42,14 @@ function Content() {
 }
 
 const Section1 = () => {
+  const year = new Date().getFullYear();
+
   return (
     <div>
       <Nav />
       <div className="mt-10">
         <p className="text-center px-5 text-sm md:text-lg text-white">
-          Copyright &copy; 2024 DITSA. All Rights Reserved
+          Copyright &copy; {year} Ditsa Technology Pvt. Ltd. All Rights Reserved
         </p>
       </div>
     </div>
@@ -56,11 +58,40 @@ const Section1 = () => {
 
 const Section2 = () => {
   return (
-    <div className="flex justify-center mb-20">
+    <div className="mb-10 flex flex-col items-center">
       <h1 className="text-[14vw] averta-bold leading-[0.8] mt-10 text-white">
         <span className="dark:text-gradient bebas-font">DITSA</span>
         <span className="text-accent-red">.</span>
       </h1>
+      <div className="mt-6 w-full px-5 text-center text-white">
+        <p className="text-base font-semibold md:text-lg">
+          Ditsa Technology Pvt. Ltd.
+        </p>
+        <div className="mx-auto mt-4 grid max-w-4xl gap-3 text-sm md:grid-cols-3 md:gap-8">
+          <div>
+            <p className="font-semibold text-white/70">Registered Office</p>
+            <p className="mt-1">Madhyapur Thimi, Bhaktapur, Nepal</p>
+          </div>
+          <div>
+            <p className="font-semibold text-white/70">Phone</p>
+            <a
+              className="mt-1 inline-block hover:underline"
+              href="tel:+9779867676078"
+            >
+              +977 9867676078
+            </a>
+          </div>
+          <div>
+            <p className="font-semibold text-white/70">Email</p>
+            <a
+              className="mt-1 inline-block hover:underline"
+              href="mailto:info@ditsa.com.np"
+            >
+              info@ditsa.com.np
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
